@@ -24,8 +24,9 @@ public class oneday_xitunFragment extends Fragment {
         WebView webview = view.findViewById(R.id.onedayroute);
         webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient());
-        String url="https://www.google.com/maps/dir/?api=1&"+"origin="+"桃園市蘆竹區南崁國民小學"+"&destination="+"復旦高級中學"+"&travelmode=bicycling"+
-                "&waypoints="+"吉林公園"+"%7C"+"桃園市內壢高級中等學校";
+        String url="https://www.google.com/maps/dir/?api=1&%22+%22origin=%22+%22逢甲炒餅條 Taiwan Pancake"+"&destination="+"KUN HOTEL"+"&travelmode=bicycling"+
+                "&waypoints="+"國立自然科學博物館"+"%7C"+"樹兒早午餐（週二不定休，參考粉絲團）" + "%7c" + "國立臺灣美術館" + "%7c" + "好豆堂" + "%7c" + "秋紅谷景觀生態公園" +
+                "%7c" + "中央公園" + "%7c" + "逢甲夜市";
         webview.loadUrl(url);
         return view;
     }
